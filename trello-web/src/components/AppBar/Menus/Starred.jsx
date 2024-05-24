@@ -9,9 +9,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Starred() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -19,15 +19,17 @@ function Starred() {
   };
   return (
     <Box>
-        <Button
+      <Button
+        sx={{ color: 'white' }}
+
         id="basic-button-starred"
         aria-controls={open ? 'basic-menu-starred' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        endIcon={<ExpandMoreIcon/>}
+        endIcon={<ExpandMoreIcon />}
       >
-       Starred
+        Starred
       </Button>
       <Menu
         id="basic-menu-starred"
@@ -49,7 +51,7 @@ function Starred() {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            
+
           </ListItemIcon>
           Custom: 1.2
         </MenuItem>

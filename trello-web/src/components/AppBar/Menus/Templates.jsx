@@ -10,9 +10,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Templates() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -20,15 +20,17 @@ function Templates() {
   };
   return (
     <Box>
-        <Button
+      <Button
+        sx={{ color: 'white' }}
+
         id="basic-button-templates"
         aria-controls={open ? 'basic-menu-templates' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        endIcon={<ExpandMoreIcon/>}
+        endIcon={<ExpandMoreIcon />}
       >
-       Templates
+        Templates
       </Button>
       <Menu
         id="basic-menu-templates"
@@ -50,7 +52,7 @@ function Templates() {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            
+
           </ListItemIcon>
           Custom: 1.2
         </MenuItem>

@@ -9,9 +9,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Recent() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -19,15 +19,17 @@ function Recent() {
   };
   return (
     <Box>
-        <Button
+      <Button
+        sx={{ color: 'white' }}
+
         id="basic-button-recent"
         aria-controls={open ? 'basic-menu-recent' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        endIcon={<ExpandMoreIcon/>}
+        endIcon={<ExpandMoreIcon />}
       >
-       Recent
+        Recent
       </Button>
       <Menu
         id="basic-menu-recent"
@@ -49,7 +51,7 @@ function Recent() {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            
+
           </ListItemIcon>
           Custom: 1.2
         </MenuItem>

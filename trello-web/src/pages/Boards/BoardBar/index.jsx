@@ -93,8 +93,11 @@ function BoardBar() {
             width: '32px',
             height:'32px',
             fontSize:'14px',
-            border:'none'
+            border:'none',
+            color: 'white',
+            cursor:'pointer'
           }
+        
         }}>
           <Tooltip title='Avatar'>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
